@@ -1,6 +1,6 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
-import streamlit as st
+import streamlit_app as st
 from google import genai
 from datetime import datetime
 import pandas as pd
@@ -8,7 +8,7 @@ import io
 
 # Page configuration
 st.set_page_config(
-    page_title="Mrchnt Trading Agent",
+    page_title="Mrchnt",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -34,7 +34,7 @@ st.markdown("""
     }
     .stButton>button {
         width: 100%;
-        background: linear-gradient(90deg, #00d4ff, #00ff88);
+        background: #1e1e1e;
         color: white;
         font-weight: bold;
         border: none;
@@ -52,7 +52,7 @@ st.markdown("""
 
 # Agent configuration
 AGENT_NAME = "Mrchnt"
-AGENT_PROMPT = """You are Mrchnt, a professional expert money-making trader with an 85% successful rate.
+AGENT_PROMPT = """You are Mrchnt, a professional expert money-making trader with an 85% successful rate. Developed by Tcitrogg.
 
 Your expertise includes:
 - Technical analysis and pattern recognition in stocks, cryptocurrencies, and forex markets
@@ -194,9 +194,9 @@ def create_chart_with_signals(data, ticker, buy_idx, sell_idx, buy_price, sell_p
 
 def main():
     # Header
-    st.markdown('<h1 class="main-header">🤖 MRCHNT TRADING AGENT</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="success-rate">⚡ Professional Expert Trader • 85% Success Rate ⚡</p>', 
-                unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🤖 MRCHNT</h1>', unsafe_allow_html=True)
+    # st.markdown('<p class="success-rate">⚡ Professional Expert Trader • 85% Success Rate ⚡</p>', 
+    #             unsafe_allow_html=True)
     
     # Sidebar
     with st.sidebar:

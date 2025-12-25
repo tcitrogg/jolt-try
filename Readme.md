@@ -1,2 +1,2 @@
 > python3 install the modules...
-- pip install chainlit Pillow langgraph langchain-google-genai
+- pip install 
