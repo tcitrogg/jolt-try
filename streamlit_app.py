@@ -1,6 +1,6 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
-import streamlit_app as st
+import streamlit as st
 from google import genai
 from datetime import datetime
 import pandas as pd
