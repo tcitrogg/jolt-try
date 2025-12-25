@@ -6,7 +6,6 @@ from datetime import datetime
 import pandas as pd
 import io
 
-# Page configuration
 st.set_page_config(
     page_title="Mrchnt",
     page_icon="📈",
